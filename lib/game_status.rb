@@ -39,4 +39,5 @@ def full?(board)
     if (spot == "X") || (spot == "O")
       return true
     end
+  end
 end
