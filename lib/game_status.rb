@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   # ETC, an array for each win combination
 ]
 def won?(board)
-  WIN_COMBINATIONS.select |combo| do
+  WIN_COMBINATIONS.select do |combo|
     if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" || board[combo[0]] == "O" &&board[combo[1]] == "O" &&board[combo[2]] == "O"
   end
 end
