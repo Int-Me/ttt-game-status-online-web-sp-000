@@ -60,7 +60,7 @@ end
 def winner(board)
   if index_0 == "X"
     return "X"
-  elsif won?(board) == ["O", "O", "O"]
+  elsif index_0 == "O"
     return "O"
 
   end
