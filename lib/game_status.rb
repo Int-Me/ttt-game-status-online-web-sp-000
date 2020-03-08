@@ -16,14 +16,22 @@ WIN_COMBINATIONS = [
   # ETC, an array for each win combination
 ]
 def won?(board)
-  counter = 0
-  until counter == 9
-    combo = WIN_COMBINATIONS[counter]
-    if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" || board[combo[0]] == "O" &&board[combo[1]] == "O" &&board[combo[2]] == "O"
-      return combo
-    else return false
+  WIN_COMBINATIONS.each do |win_combo|
+    index_0 = win_combo[0]
+    index_1 = win_combo[1]
+    index_2 = win_combo[2]
+
+    position_1 = @board[index_0]
+    position_2 = @board[index_1]
+    position_3 = @board[index_2]
+
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win_combo
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return win_combo
     end
-    counter += 1
+  end
+  return false
   end
 
 
