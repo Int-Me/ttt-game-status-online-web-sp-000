@@ -59,6 +59,10 @@ end
 
 def winner(board)
   final = won?(board)
+  if final[0] == "X"
+    return "X"
+  elsif final[0] == "O"
+    return "O"
   end
 
 
