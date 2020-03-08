@@ -37,5 +37,5 @@ def won?(board)
 def full?(board)
   board.none? do |i|
     i == " "?
-
+  end
 end
