@@ -55,3 +55,15 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  win_move = [0]
+  win_move = win?(board)
+  if win_move [0] == "X"
+    return "X"
+  elsif win_move [0] == "O"
+    return "O"
+  end
+    
+  
+end
