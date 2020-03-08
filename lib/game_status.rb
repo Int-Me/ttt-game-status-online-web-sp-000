@@ -16,9 +16,12 @@ WIN_COMBINATIONS = [
   # ETC, an array for each win combination
 ]
 def won?(board)
-  WIN_COMBINATIONS.each |combo|
-  if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" || board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
-    return combo
-  else return falsey
-  end
+  win_index_1 = WIN_COMBINATIONS[0]
+  win_index_2 = WIN_COMBINATIONS[1]
+  win_index_3 = WIN_COMBINATIONS[2]
+  win_index_4 = WIN_COMBINATIONS[3]
+  win_index_5 = WIN_COMBINATIONS[4]
+  win_index_6 = WIN_COMBINATIONS[5]
+  win_index_7 = WIN_COMBINATIONS[6]
+  win_index_8 = WIN_COMBINATIONS[7]
 end
