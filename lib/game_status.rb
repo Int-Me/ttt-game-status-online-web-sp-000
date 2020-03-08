@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
   # ETC, an array for each win combination
 ]
-index_0 = 0
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
     index_0 = win_combo[0]
