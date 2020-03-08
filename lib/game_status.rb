@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
   # ETC, an array for each win combination
 ]
+win_move = [0]
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
     index_0 = win_combo[0]
@@ -30,6 +31,7 @@ def won?(board)
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       return win_combo
     end
+    win_move == win_combo
   end
   return false
   end
