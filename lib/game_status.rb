@@ -35,7 +35,7 @@ def won?(board)
   end
 
 def full?(board)
-  board.all do |spot|
+  board.all? do |spot|
     if (spot == "X") || (spot == "O")
       return true
     end
