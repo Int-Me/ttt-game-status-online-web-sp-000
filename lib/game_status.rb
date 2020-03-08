@@ -63,7 +63,7 @@ def winner(board)
     return "X"
   elsif win_move [0] == "O"
     return "O"
-  else return false
+  
   end
 
 
