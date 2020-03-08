@@ -16,11 +16,17 @@ WIN_COMBINATIONS = [
   # ETC, an array for each win combination
 ]
 def won?(board)
-  WIN_COMBINATIONS.each do |combo|
-
+  counter = 0
+  until counter == 9
+    combo = WIN_COMBINATIONS[counter]
     if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" || board[combo[0]] == "O" &&board[combo[1]] == "O" &&board[combo[2]] == "O"
       return combo
     else return false
     end
-  end
+    counter += 1
+  end 
+
+    
+    
+  
 end
