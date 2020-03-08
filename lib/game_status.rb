@@ -59,7 +59,7 @@ end
 
 def winner(board)
   index = []
-  index = won?
+  index = won?(board)
   if index == false
     return nil
   else
