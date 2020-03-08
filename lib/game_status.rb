@@ -56,7 +56,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   win_move = [0]
   win_move = win?(board)
   if win_move [0] == "X"
