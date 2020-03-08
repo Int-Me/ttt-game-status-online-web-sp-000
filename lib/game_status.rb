@@ -64,6 +64,6 @@ def winner?(board)
   elsif win_move [0] == "O"
     return "O"
   end
-    
-  
+
+
 end
