@@ -38,7 +38,8 @@ def full?(board)
   board.all? do |spot|
     if (spot == "X") || (spot == "O")
       return true
-    else return false
+    else 
+      return false
     end
   end
 end
